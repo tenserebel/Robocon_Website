@@ -1,11 +1,7 @@
-<!--
-     Date Created: 12/23/17
-     Date Revised: 12/26/17
--->
+
 <!DOCTYPE html>
 <html>
      <head>
-          <!-- Required meta tags -->
           <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,13 +18,11 @@
           <!-- Normalize -->
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 
-          <!-- Custom CSS -->
           <link href="css/style.css" rel="stylesheet">
           <link href="css/style2.css" rel="stylesheet">
 
 
           <style>
-               /* If you wish to remove the astonish.js file, then also be sure to remove these styles. */
                .astonish {
                     visibility: visible;
                }
@@ -47,16 +41,17 @@
           <!-- Main Navigation -->
           <nav class="main-nav" id="main-nav">
                <div class="content-wrapper-sm">
-                    <a href="#" class="navbar-brand">Volta</a>
+                    <a href="./index.html" class="navbar-brand"><img alt="Qries" src="img\logo.png"
+                         width="9" height="60"></a>
                     <div id="menu-button">
                          <div class="bar1"></div>
                          <div class="bar2"></div>
                          <div class="bar3"></div>
                     </div>
                     <ul class="nav-links">
-                         <li><a href="#Work">Work</a></li>
-                         <li><a href="#Achievements">Achievements</a></li>
-                         <li><a href="#Application">Application</a></li>
+                         <li><a class="link" href="./work.html">Work</a></li>
+                         <li><a class="link" href="./ach.html">Achievements</a></li>
+                         <li><a class="link" href="./app.html">Application</a></li>
                     </ul>
                </div>
           </nav>
@@ -66,8 +61,10 @@
                <!-- First replaceble image -->
                <img class="img-absolute" src="img/robo.gif" alt="City 1">
                <div class="wrapper astonish animated fadeInDown">
-                    <h1><strong>Team </strong>Volta</h1>
-                    <h2>MIT ADT Team For Robocon<br>
+                    <div id="title" class="slide header">
+                         <h1 style="margin-top:-1em;">Team <strong>Volta</strong></h1>
+                    </div>
+                    <h2 class="title animation--text-typing" style="font-family: Nunito;color:black"><div>MIT ADT Team For Robocon</div><br>
                     </h2>
                </div>
           </header>
@@ -76,23 +73,140 @@
           <main>
                <div class="content-wrapper" id="about">
                     <!-- second replaceble image -->
-                    <img class="img-absolute" src="img/city2.png" alt="City 2">
+                    <img class="img-absolute" src="img/aboutUs.jpg" alt="ABOUT">
                     <div class="grid">
                          <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
-                              <h2 class="section-title">About Team Volta</h2>
-                              <p>CityScapes is a fully responsive and customizable landing page template. All images can easily be replaced from the html side, without having to dig through the css.</p>
-                              <p>The full version of this template is available at Github and it comes with the SASS files in order to provide quicker customization features, for those who are developers.</p>
-                              <p>Javascript files are also included, they are used to enhance the user experience but apart from the menu.js file, they are all optional.</p>
+                              <b><h2 class="section-title3">About Team Volta</h2></b>
+                              <p class="about">MIT-ADT offers many opportunities for students in different fields in the form of different clubs.</p>
+                              <p class="about">Team VOLTA being one of the prominent Robotics club offers : <br>
+                                   <li class="about"> New learning experiences covering all the branches of engineering</li><br>
+                                   <li class="about"> Participation opportunities in Robotics competitions giving National and international exposure</li>
+                                   </p>
+                              <p class="about">Formed in March 2019 under the Mechatronics Department, Team Volta has been working consistently and has participated in Robocon 2020, 2021 and 2022</p>
                          </div>
                     </div>
                </div>
 
                <div id="reserve" class="content-wrapper-lg text-center astonish" data-animation="zoomIn">
                     <h2 class="section-title">Meet the Team</h2>
-                    <p>CityScapes is great for any travel agency or tour agency, that wishes to showcase the focal points of a city. If you want a unique looking landing page that has a unique artistic style that will attract clients, then this is the template for you. Go ahead and download it for free from Github.</p>
-                    <a href="#" class="btn btn-outline-purple">TEAM</a>
+                    <p>The team consists of dedicated members from various fields, led by experienced leaders. They are committed to creating exceptional projects and giving their best in every competition. With so many accomplishments already under their belts, they would be taking in new members and inspiring others in the field of robotics.</p>
+                    <a href="./team.html" class="btn btn-outline-purple">TEAM</a>
                </div>
-
+               <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animation="fadeInLeft">
+               <h2 class="section-title text-center">GALLERY</h2>
+               <div class="container">
+                    <div class="slid-er">
+                      <div class="slides" id="slides">
+                        <div class="slide">
+                          <div class="slide-content">
+                              
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/8_NfCWPVsTh6.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618832468" loading="lazy"/>
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/9_6BA5RW3B0H.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618832532" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/7_55gS7R6dB.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618832384" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/5_oi7gYCFch.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618832228" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/6_QWbKOF3S4.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618832323" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/4_iY3Kr-o6V.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618819986" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <!-- Mirror content -->
+                        <div class="slide">
+                          <div class="slide-content">   
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/3_YkryMPi9B.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618818755" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/2_UIh_ZlAjl.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618814565" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/1_5zMWozzIR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618813389" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/12_3sIJy4N4Nw.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618813798" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/11_zZZOveX_g.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618813266" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                              <img src="img\gallery\12.jpeg" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="slide-content">
+                                  <img src="https://ik.imagekit.io/7afoxixmmnqf/gallery/10_jIwgTDKZ-e.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1655618812602" loading="lazy" />
+                              <div class="button-container">
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </div>
                <div class="content-wrapper" id="contact">
                     <!-- Third replaceble image -->
                     <img class="img-absolute" src="img/city3.png" alt="City 3">
@@ -138,7 +252,7 @@
           <footer>
                <div class="content-wrapper-sm display-flex-between">
                     <!-- Easily replaceble copyright information -->
-                    <small>Copyright by Team volta,<br> 
+                    <small>&copy; Copyright by Team volta,<br> 
                         Since 2022</small>
 
                     <!-- Make sure to edit the links so that they go to your social media. -->
@@ -147,7 +261,7 @@
                               <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                               <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                               <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
-                              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              <li><a href="https://www.linkedin.com/company/team-volta" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
                          </ul>
                     </div>
                </div>
@@ -162,5 +276,8 @@
           <script src="js/astonish.js" charset="utf-8"></script>
           <script src="js/nav.js" charset="utf-8"></script>
           <script src="js/scroll.js" charset="utf-8"></script>
+          <script src="js\caro.js" charset="utf-8"></script>
+          <script src="js\text.js" charset="utf-8"></script>
+
      </body>
 </html>

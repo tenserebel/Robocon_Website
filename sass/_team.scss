@@ -1,0 +1,112 @@
+/* basics */
+
+$s-width:100vw;
+$s-height:$s-width/3;
+$bubble-width:$s-width/8;
+$bubble-height:$bubble-width;
+
+/* shadows */
+
+$bubble-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08),
+0px 15px 35px 0px rgba(49, 65, 93, 0.10);
+
+$bubble-shadow-float: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+0px 6px 12px 0px rgba(49, 65, 93, .2);
+
+/* style */
+
+.wrapper {
+  width: $s-width;
+  height: $s-height;
+  margin: 10vh auto;
+  background: none;
+  position: relative;
+  text-align: center;
+}
+
+.bubble {
+  width: $bubble-width;
+  height: $bubble-height;
+  box-shadow: $bubble-shadow;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: -$bubble-width/2;
+}
+
+.one {
+  left: 20%;
+  top: 20%;
+}
+
+.two {
+  left: 40%;
+  top: 10%;
+  animation-delay: -.4s;
+}
+
+.three {
+  left: 60%;
+  top: 30%;
+  animation-delay: -.6s;
+}
+
+.four {
+  left: 80%;
+  top: 20%;
+  animation-delay: -.8s;
+}
+
+.five {
+  left: 20%;
+  top: 80%;
+  animation-delay: .2s;
+}
+
+.six {
+  left: 40%;
+  top: 70%;
+  animation-delay: .4s;
+}
+
+.seven {
+  left: 60%;
+  top: 90%;
+  animation-delay: .6s;
+}
+
+.eight {
+  left: 80%;
+  top: 80%;
+  animation-delay: .8s;
+  
+}
+
+/* animation */
+
+$timing:ease-in-out;
+$animationtime:6s;
+$distance:translate3d(0, 1vh, 0);
+
+@keyframes float {
+  0% {
+    animation-timing-function: $timing;
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    animation-timing-function: $timing;
+    transform: $distance;
+    box-shadow:$bubble-shadow-float;
+  }
+  100% {
+    animation-timing-function: $timing;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.float {
+  animation-name: float;
+  transform-origin: center bottom;
+  animation-iteration-count: infinite;
+  animation-duration: $animationtime;
+  animation-fill-mode: both;
+}
