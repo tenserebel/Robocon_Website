@@ -482,14 +482,14 @@ button, .btn {
   font-weight: 100;
   font-size: 3rem;
   text-transform: uppercase;
-/*   margin-top: 3rem; */
+  margin-top: 3rem;
 }
 
 .section-title3 {
   font-weight: bold;
   font-size: 2rem;
   text-transform: uppercase;
-  color:black;
+  /* color:black; */
   font-family: "Courier New";
 }
 
@@ -497,7 +497,7 @@ button, .btn {
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
-  color:black;
+  /* color:black; */
   font-family: "Courier New";
 }
 
@@ -722,7 +722,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-nav {
   display: block;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -732,6 +732,12 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.main-nav-2{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .main-nav > .content-wrapper-sm {
@@ -890,7 +896,7 @@ header {
 }
 
 .header-work {
-  height: 430vh;
+  /* height: 400vh; */
   color: #ffffff;
   text-align: center;
   display: -webkit-box;
@@ -906,6 +912,14 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.section-work{
+  display:flex;
+  flex-flow: column wrap;
+  justify-content:center;
+  align-items: center;
+  margin-top:3rem;
 }
 
 header h1 {
